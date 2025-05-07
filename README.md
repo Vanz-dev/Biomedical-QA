@@ -36,5 +36,6 @@ load_dataset("pubmed_qa", "pqa_labeled")
 ## 🧠 Results Summary
 | Model       | Accuracy | Macro F1 | Semantic Similarity |
 |------------|---------|---------|--------------------|
-| Pretrained | 0.085   | 0.0586  | 0.47              |
-| Fine-tuned | 0.475   | 0.3110  | 0.83              |
+| Pretrained | 0.1750   | 0.1558  | 0.59              |
+| Fine-tuned | 0.4750   | 0.3110  | 0.83              |
+
