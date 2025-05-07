@@ -2,7 +2,7 @@
 
 This project implements a biomedical question answering pipeline using the PubMedQA dataset and PubMedBERT. It uses BM25 for context retrieval and fine-tunes a pretrained biomedical transformer to classify answers. We also evaluate semantic similarity using Sentence-BERT.
 
-## Overview
+## 🔍 Overview
 
 **Key components:**
 - **Dataset**: `pubmed_qa` (`pqa_labeled` subset)
@@ -24,16 +24,16 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
-## Usage
+## 📦 Usage
 Open and manually execute the Jupyter Notebook: qa_final.ipynb
 
-## Dataset
+## 📁 Dataset
 We use the Hugging Face datasets library to load the PubMedQA dataset.
 ```python
 load_dataset("pubmed_qa", "pqa_labeled")
 ```
 
-## Results Summary
+## 🧠 Results Summary
 | Model       | Accuracy | Macro F1 | Semantic Similarity |
 |------------|---------|---------|--------------------|
 | Pretrained | 0.085   | 0.0586  | 0.47              |
