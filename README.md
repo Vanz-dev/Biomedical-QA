@@ -33,6 +33,21 @@ We use the Hugging Face datasets library to load the PubMedQA dataset.
 load_dataset("pubmed_qa", "pqa_labeled")
 ```
 
+## 🚀 Methodology
+
+This project implements a biomedical question-answering system using the PubMedQA dataset and PubMedBERT. The key steps include:
+
+1. **Dataset Preparation**: The PubMedQA dataset is loaded, shuffled, and split into training and testing sets.
+2. **BM25 Retrieval**: A BM25 model retrieves relevant contexts for questions based on tokenized documents.
+3. **Preprocessing**: Questions and retrieved contexts are tokenized with PubMedBERT for classification tasks.
+4. **Model Training**:
+   - **Pretraining**: The PubMedBERT model is evaluated on the test set to establish a baseline.
+   - **Fine-tuning**: The model is fine-tuned on the training set to improve performance.
+5. **Evaluation**:
+   - Metrics such as accuracy and F1-score are computed.
+   - Semantic similarity between predicted and reference answers is calculated using Sentence-BERT. 
+
+
 ## 🧠 Results Summary
 | Model       | Accuracy | Macro F1 | Semantic Similarity |
 |------------|---------|---------|--------------------|
